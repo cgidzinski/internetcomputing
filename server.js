@@ -25,7 +25,7 @@ app.use(bodyParser.json()); // get information from html forms
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set('view engine', 'ejs'); // set up ejs for templating
 app.use(express.static(__dirname + '/public'));
-app.use(favicon(__dirname + '/public/lance.ico'));
+app.use(favicon(__dirname + '/public/favicon.ico'));
 // routes ======================================================================
 require('./routes/api/misc.js')(app);
 // launch ======================================================================
